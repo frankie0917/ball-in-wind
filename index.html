@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div style="width: 100vw; height: 100vh">
+        <canvas id="canvas" />
+      </div>
+      <div class="display">
+        <div id="wind"></div>
+        <div id="gravity"></div>
+        <div id="timespeed"></div>
+        <div id="paused"></div>
+        <div id="velocityX"></div>
+        <div id="velocityY"></div>
+        <div id="positionX"></div>
+        <div id="positionY"></div>
+      </div>
+      <div class="controls">
+        <div>w: timeSpeed * 2</div>
+        <div>s: timeSpeed / 2</div>
+        <div>a: toggle paused</div>
+        <div>d: toggle wind</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
